@@ -21,9 +21,9 @@ function run() {
         iters--;
         if (iters >= 0) run();
         else {
-            alert("running style change");
-            $("body").append("<style class='coloring'></style>");
-            $(".coloring").html("body:nth-child(" + (maxcols + 1) + "){color:red}");
+            // alert("running style change");
+            // $("body").append("<style class='coloring'></style>");
+            // $(".coloring").html("body:nth-child(" + (maxcols + 1) + "){color:red}");
 
         }
     }, 0);
