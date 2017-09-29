@@ -1,4 +1,4 @@
-let blocks = ["╱", "╲"]; //Array of possible characters that can be used. The Double backslash is so that the second one can be escaped
+let blocks = ["	&#9585;", "	&#9586;"]; //Array of possible characters that can be used. The Double backslash is so that the second one can be escaped
 
 
 let randBlock = function () {
@@ -12,7 +12,7 @@ let maxlines = window.innerHeight / calibrationHeight;
 let maxcols = window.innerWidth / calibrationWidth;
 document.body.innerHTML = "";
 
-let iters = maxcols * maxlines * 1.15;
+let iters = maxcols * maxlines * 1.01;
 
 function run() {
     setTimeout(function () {
