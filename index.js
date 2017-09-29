@@ -1,8 +1,13 @@
-let blocks = ["	&#9585;", "	&#9586;"]; //Array of possible characters that can be used. The Double backslash is so that the second one can be escaped
+let blocks = ["	&#9585;", "	&#9586;", " &#9587;"]; //Array of possible characters that can be used. The Double backslash is so that the second one can be escaped
 
-
+if(Math.random() < 0.2){
+    blocks.push(" &#9620;");
+}
+if(Math.random() < 0.2){
+    blocks.push(" &#9634;");
+}
 let randBlock = function () {
-    return "<p style='display: inline-block; margin: 0; padding: 0;'>" + blocks[Math.floor(Math.random() * 2)] + "</p>";
+    return "<p style='display: inline-block; margin: 0; padding: 0;'>" + blocks[Math.floor(Math.random() * blocks.length)] + "</p>";
 };
 document.body.innerHTML += "<p id='calibration' style='display:inline-block'>╱<p>";
 let calibrationHeight = document.getElementById("calibration").clientHeight;
